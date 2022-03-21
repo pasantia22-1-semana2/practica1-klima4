@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Presupuesto</title>
+</head>
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <div class="header__container">
+        <p class="header__text header__text--set">Presupuesto Disponible</p>
+        <h1 class="header__title">Q2,400.00</h1>
+        <div class="header__label header__label__bg--blue">
+          <p class="header__text header__text--start">Ingresos</p>
+          <p class="header__text header__text--end">$6,600.00</p>
+        </div>
+        <div  class="header__label header__label__bg--orange">
+          <p class="header__text header__text--start">Egresos</p>
+          <p class="header__text header__text--end">Q2,300.00 
+          <span class="header__text--span">50%</span></p>
+        </div>
+    </div>
+</header>
+
+  <main class="container__content" >
+    <main class="container__content">
+      <!-- encabezado contenido -->
+      <div class="container__content__descripcion">
+          <div class="content__descripcion">
+              <select class="content__descripcion__item--opcion">
+                  <option>+</option>
+                  <option>-</option>
+              </select>
+              <input class="content__descripcion__item input" type="text" placeholder="Agregar Descripción">
+              <input class="content__descripcion__item --input"  type="number" placeholder="Valor">
+              <button class="content__descripcion__item --button" >✅</button> <!-- BOTON -->
+          </div>
+      </div>
+
+      <!-- conteiner de tablas -->
+      <div class="container__tables">
+        <!-- ingreso -->
+        <div class="table__content">
+            <h3 class="table__content__title table">Ingresos</h3>
+            <table class="table__content__table">
+                <tbody class="table__tbody">
+                    <tr>
+                        <td>Salario</td>
+                        <td>+Q6600.00</td>
+                        <td><button class="table__item--button" >✅</button></td> <!-- BOTON -->
+                    </tr>
+                    <tr>
+                        <td>Viaje</td>
+                        <td>+Q300.00</td>
+                        <td><button class="table__item--button" >✅</button></td> <!-- BOTON -->
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- conteiner de tablas de descripcion de gastos -->
+        <div class="table__content">
+          <h3 class="table__content__title table__content__title">Egresos</h3>
+          <table class="table__content__table">
+              <tbody>
+                  <tr>
+                      <td>Venta</td>
+                      <td>-$100.00 <span class="header__text--span">50%</span></td>
+                      <td><button class="table__item--button" >⛔</button></td> <!-- BOTON -->
+                  </tr>
+                  <tr>
+                      <td>Viaje</td>
+                      <td>-$300.00 <span class="header__text--span">50%</span></td>
+                      <td><button class="table__item--button" >⛔</button></td> <!-- BOTON -->
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+
+  </main>
+
+
+
+  
+    </div>
+
+    <script src="clases/Raton.js"></script>
+</body>
+</html>
